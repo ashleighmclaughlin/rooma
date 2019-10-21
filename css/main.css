@@ -1,0 +1,540 @@
+/* Spacings / Page Set Up*/
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.landing-logo,
+.landing-content h1,
+.landing-button,
+.landing-content p,
+.guest-choice {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.modal-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.arrows {
+    display: flex;
+    position: relative;
+}
+
+.nav {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.rooma .screen {
+    display: none;
+}
+
+.screen.active {
+    display: block;
+}
+
+.right-arrow,
+.accom-arrow,
+.nights-arrow {
+    position: absolute;
+    right: 0;
+    align-content: center;
+}
+
+
+
+/* Images */
+.landing {
+    background-image: url(../images/landing-background.jpg);
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.landing-content img {
+    max-height: 130px;
+    margin-top: 200px;
+}
+
+.main-img,
+.secondary-img {
+    max-width: 300px;
+}
+
+.main-img {
+    margin-bottom: 15px;
+}
+
+
+
+/* Buttons */
+.landing-button {
+    margin-top: 200px;
+}
+
+
+
+.start-btn,
+.modal-btn {
+    text-decoration: none;
+    color: white;
+    border-radius: 50px;
+}
+
+.start-btn {
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 8px 80px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.modal-btn {
+    background-color: #a8d0ca;
+    padding: 8px 50px;
+    font-size: 17px;
+}
+
+.guest-btn {
+    width: 110px;
+    height: 110px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid #222;
+    background-color: white;
+    text-align: center;
+    color: #333;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.guest-choice {
+    margin-top: 100px;
+}
+
+.start-btn:hover,
+.modal-btn:hover {
+    background-color: white;
+    color: #a8d0ca;
+}
+
+.chosen-guest-btn,
+.guest-btn:focus,
+.guest-btn:hover {
+    background-color: #333;
+    color: white;
+}
+
+.modal-btn:hover {
+    border: 2px solid #a8d0ca;
+}
+
+.modal-btn:active,
+.start-btn:active,
+.guest-btn:focus {
+    outline: none;
+}
+
+
+
+/* Text */
+/* Titles */
+.landing-content h1 {
+    font-size: 70px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.night-title,
+.guest-title {
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 300px;
+}
+
+.night-title {
+    color: #a8d0ca;
+}
+
+.guest-title {
+    color: #f99192;
+}
+
+.guest-underline,
+.night-underline,
+.modal-underline {
+    height: 2px;
+    border: 0;
+}
+
+.guest-underline,
+.night-underline {
+    width: 10%;
+}
+
+.guest-underline {
+    background-color: #f99192;
+}
+
+.night-underline {
+    background-color: #a8d0ca;
+}
+
+.modal-underline {
+    background-color: #333;
+    width: 20%;
+}
+
+/* Other Text*/
+.landing-content p {
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.modal-text h1 {
+    font-size: 25px;
+}
+
+.modal-text {
+    padding: 30px;
+    text-align: center;
+}
+
+
+
+/* Nav Bar */
+.nav-logo {
+    max-width: 60px;
+}
+
+.navigation {
+    background: #222;
+    color: white;
+    padding: 12px;
+}
+
+.nav-items li {
+    display: inline-flex;
+    font-size: 18px;
+}
+
+#guestInput {
+    margin-right: 50px;
+}
+
+.nav-items {
+    width: 100%;
+    text-align: right;
+}
+
+.nav-items span {
+    margin-left: 6px;
+}
+
+
+
+/* Categories List*/
+.categories {
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.categories li {
+    padding: 30px;
+    list-style-type: none;
+    cursor: pointer;
+    padding-top: 0px;
+    display: inline;
+}
+
+.categories li:hover {
+    color: #a8d0ca;
+}
+
+
+
+/* Macy Container */
+.macy-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.child-element {
+    box-shadow: 5px 4px 8px rgba(46, 49, 49, 0.4);
+}
+
+.child-element img {
+    width: 100%;
+}
+
+.child-element h3,
+.child-element p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.child-element h3 {
+    font-size: 17px;
+}
+
+
+
+/* Media Queries */
+@media only screen and (max-width: 1000px) {
+    .guest-btn {
+        width: 80px;
+        height: 80px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+
+    .main-img,
+    .secondary-img {
+        max-width: 250px;
+    }
+
+    .modal-text {
+        padding: 0px;
+        padding-left: 15px;
+    }
+
+    .modal-text h1 {
+        font-size: 22px;
+    }
+
+    .modal-text h3 {
+        font-size: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    .categories li {
+        padding: 10px;
+    }
+
+    .guest-btn {
+        width: 60px;
+        height: 60px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .night-title,
+    .guest-title {
+        font-size: 40px;
+        margin-top: 200px;
+    }
+
+    .modal-button {
+        width: 150px;
+        height: 30px;
+        margin-top: 0px;
+        font-size: 15px;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .nav-items li {
+        font-size: 15px;
+    }
+
+    .nav-items span {
+        margin-left: 2px;
+    }
+
+    #guestInput {
+        margin-right: 10px;
+    }
+
+    .categories li {
+        font-size: 15px;
+        display: block;
+    }
+
+    .categories {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .guest-btn {
+        width: 40px;
+        height: 40px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .landing-button{
+        margin-top: 100px;
+    }
+
+    .landing-content img{
+        margin-top: 100px;
+        max-height: 100px;
+    }
+
+    .landing-content h1 {
+        font-size: 50px;
+    }
+
+    .night-title,
+.guest-title {
+    margin-top: 100px;
+}
+}
+
+
+
+/* Sean Bellows Vue Number Input sourced from Codepen
+https://codepen.io/sebellows/details/jLQpZe */
+#app {
+    margin-top: 100px;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.control.number {
+    display: inline-flex;
+    margin-bottom: 1rem;
+    position: relative;
+    width: 100%;
+    max-width: calc(180 / 16 * 1rem);
+}
+
+.control.number input {
+    border: 1px solid #222;
+    border-radius: 5px;
+    font-size: .875rem;
+    flex: 1 0;
+    line-height: 1.65;
+    height: 4em;
+    margin: 0 auto;
+    padding-left: .5rem;
+    padding-right: calc(82 / 16 * 1rem);
+    text-align: left;
+    width: 100px;
+    max-width: 100%;
+    vertical-align: top;
+    -moz-appearance: textfield;
+}
+
+.control.number input::-webkit-inner-spin-button,
+.control.number input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.control.number input:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem #222;
+}
+
+.control.number button {
+    background-color: transparent;
+    border: 0px solid #222;
+    border-left-width: 1px;
+    border-radius: 0;
+    color: #222;
+    cursor: pointer;
+    flex: 0 1;
+    font-family: sans-serif;
+    font-size: .875rem;
+    font-weight: bold;
+    line-height: 1.7;
+    position: absolute;
+    top: .0625rem;
+    text-align: center;
+    width: 2.5rem;
+    height: 3.7rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 5;
+}
+
+.control.number button:hover,
+.control.number button:active,
+.control.number button:focus {
+    border-color: #222;
+    color: #a8d0ca;
+    outline: none;
+}
+
+.control.number button:hover~.input {
+    border: 1px solid #222;
+}
+
+.control.number button:active~.input,
+.control.number button:focus~.input {
+    border: 0;
+    box-shadow: 0 0 0 0.2rem #222;
+}
+
+.control.number button:disabled,
+.control.number button.is-disabled {
+    color: #adb5bd;
+    opacity: 1;
+}
+
+.control.number .increment-button {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    right: calc(1.5 / 14 * 1rem);
+}
+
+.control.number .decrement-button {
+    right: calc(41.5 / 14 * 1rem);
+}
+
+/* Lamb by anbileru adaleru from the Noun Project */
+/* Changed sheep to moon icon */
+.sheep {
+    background-image: url("../images/moon.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 60px;
+    height: 64px;
+}

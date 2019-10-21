@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rooma</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+    <link rel="stylesheet" href="css/modaal.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="icon" href="images/house-icon.png">
+</head>
+
+<body>
+    <div class="rooma">
+
+        <div class="container">
+
+            <div id="guests" class="screen active">
+
+                <div>
+                    <h1 class="guest-title">How many guests?</h1>
+                    <hr class="guest-underline">
+                    <div class="guest-choice">
+                        <button class="guest-btn chosen-guest-btn">1</button>
+                        <button class="guest-btn ">2</button>
+                        <button class="guest-btn">3</button>
+                        <button class="guest-btn">4</button>
+                        <button class="guest-btn">5</button>
+                    </div>
+                    <div class="arrows">
+                        <img class="nights-arrow" src="images/right-arrow.png" alt="Left arrow icon">
+                    </div>
+                </div>
+            </div>
+
+            <div id="nights" class="screen">
+                <div class="night">
+                    <h1 class="night-title">How many nights?</h1>
+                    <hr class="night-underline">
+                    <div class="night-choice">
+                        <div id="app">
+                            <number-control v-model="sheepCount" :min="1" :max="15"></number-control>
+                            <p><span class="sheep" v-for="sheep in sheepCount"></span></p>
+                        </div>
+                    </div>
+                    <div class="arrows">
+                        <img class="guests-arrow" src="images/left-arrow.png" alt="Left arrow icon">
+                        <img class="accom-arrow" src="images/right-arrow.png" alt="Right arrow icon">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="accomOptions" class="screen">
+
+            <div class="navigation">
+                <div class="container">
+                    <div class="nav">
+                        <a href="index.html"> <img class="nav-logo" src="images/landing-logo.png" alt="Rooma Logo"></a>
+                        <div class="nav-items">
+                            <ul>
+                                <li>GUESTS | <span id="guestInput"></span></li>
+                                <li>NIGHTS | <span id="nightInput"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="categories">
+                    <ul class="category-list"></ul>
+                </div>
+                <div class="macy-container"></div>
+
+                <img class="nights-arrow-left" src="images/left-arrow.png" alt="Left arrow icon">
+
+                <div id="inline" style="display:none;">
+                    <div class="modal-content">
+                        <div class="modal-images">
+                            <img class="main-img" src="https://via.placeholder.com/150" alt="150x150 Placeholder Image">
+                            <img class="secondary-img" src="https://via.placeholder.com/150" alt="150x150 Placeholder Image">
+                        </div>
+                        <div class="modal-text">
+                            <h1><span class="title"></span></h1>
+                            <hr class="modal-underline">
+                            <h3><span class="description"></span></h3>
+                            <h3>Price Per Night | $<span class="price-per-night"></span></h3>
+                            <h3>Rating | <span class="rating"></span></h3>
+                            <h3>Deal | <span class="deal"></span></h3>
+                            <a target="_blank" class="modal-btn" href="">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js" integrity="sha256-ufGElb3TnOtzl5E4c/qQnZFGP+FYEZj5kbSEdJNrw0A=" crossorigin="anonymous"></script>
+    <script src="node_modules/macy/dist/macy.js"></script>
+    <script src="js/modaal.min.js"></script>
+    <script src="js/main.js" async defer></script>
+</body>
+
+</html>
